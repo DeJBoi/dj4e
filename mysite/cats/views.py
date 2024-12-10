@@ -78,7 +78,7 @@ class BreedUpdate(LoginRequiredMixin, View):
 class BreedDelete(LoginRequiredMixin, View):
     model = Breed
     success_url = reverse_lazy('cats:all')
-    template = 'cats/make_confirm_delete.html'
+    template = 'cats/breed_confirm_delete.html'
 
     def get(self, request, pk):
         breed = get_object_or_404(self.model, pk=pk)
