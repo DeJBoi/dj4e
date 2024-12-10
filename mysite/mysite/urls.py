@@ -35,5 +35,6 @@ urlpatterns = [
         name='site_path'
     ),
     path('', TemplateView.as_view(template_name='home/main.html')),
-    path('autos/', include('autos.urls'))
+    path('autos/', include('autos.urls')),
+    path('cats/', include('cats.urls')),
 ]
